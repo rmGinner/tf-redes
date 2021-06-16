@@ -14,7 +14,7 @@ import java.nio.file.Files;
 public class DataProcessor {
 
     private final RouterCommunicator routerCommunicator;
-    
+
     public DataProcessor(){
         this.routerCommunicator = new RouterCommunicator();
     }
