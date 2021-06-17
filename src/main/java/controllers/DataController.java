@@ -1,4 +1,4 @@
-package processors;
+package controllers;
 
 import communicators.RouterCommunicator;
 import models.NetworkPackage;
@@ -11,12 +11,12 @@ import java.nio.file.Files;
  * Processador das mensagens e envio de arquivos.
  * Utiliza o {@link RouterCommunicator} para enviar dados ao roteador.
  **/
-public class DataProcessor {
+public class DataController {
 
     private final RouterCommunicator routerCommunicator;
 
-    public DataProcessor(){
-        this.routerCommunicator = new RouterCommunicator();
+    public DataController(RouterCommunicator routerCommunicator){
+        this.routerCommunicator = routerCommunicator;
     }
 
     public void sendMessage(String message){
